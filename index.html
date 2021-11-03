@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form class="form">
+        <label class="form__label" id="label_1" for="file_1">Document 1</label>
+        <input class="form__field field--file" type="file" id="file_1" name="file_1">
+        <label class="form__label" id="label_2" for="file_2">Document 2</label>
+        <input class="form__field field--file" type="file" id="file_2" name="file_2">
+        <input class="form__field field--button" type="button" id="compare" name="compare" value="Compare">
+        <input class="form__field field--button" type="button" id="reset" name="reset" value="Reset" disabled>
+    </form>
+    <section class="documents">
+        <div class="documents__view" id="document_1"></div>
+        <div class="documents__view" id="document_2"></div>
+    </section>
+</body>
+</html>
